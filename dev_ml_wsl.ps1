@@ -30,9 +30,10 @@ executeScript "HyperV.ps1";
 executeScript "WSL.ps1";
 
 write-host "Installing tools inside the WSL distro..."
-Ubuntu1804 run apt install python2.7 python-pip -y 
+Ubuntu1804 run apt install python3 python3-pip -y 
 Ubuntu1804 run apt install python-numpy python-scipy -y
-Ubuntu1804 run pip install pandas
+Ubuntu1804 run pip3 install pandas
+Ubuntu1804 run pip3 install ansible
 
 write-host "Finished installing tools inside the WSL distro"
 
